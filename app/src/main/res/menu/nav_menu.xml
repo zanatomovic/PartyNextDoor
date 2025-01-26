@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/nav_user"
+            android:icon="@drawable/user"
+            android:title="Moj nalog" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/nav_settings"
+            android:title="Podešavanja" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/nav_share"
+            android:title="Pozovi prijatelje" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/nav_about"
+            android:title="O aplikaciji" />
+    </group>
+    <item
+        android:title="" >
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/nav_logout"
+                android:title="Odjavi se" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder"
+        android:background="@drawable/image_bkg"
+        android:clipToOutline="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/naziv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text=""
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/organizator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:alpha="0.5" />
+
+        <TextView
+            android:id="@+id/opis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/item_bkg">
+
+                <TextView
+                    android:id="@+id/lokacijaLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lokacija"
+                    android:textSize="16sp"
+                    android:alpha="0.5" />
+
+                <TextView
+                    android:id="@+id/lokacija"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/item_bkg">
+
+                <TextView
+                    android:id="@+id/vrijemeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Datum i vrijeme"
+                    android:textSize="16sp"
+                    android:alpha="0.5" />
+
+                <TextView
+                    android:id="@+id/datum_vrijeme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/zanrLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Žanr muzike"
+            android:textSize="16sp"
+            android:alpha="0.5" />
+
+        <TextView
+            android:id="@+id/zanr_muzike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/izvodjacLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Izvođač"
+            android:textSize="16sp"
+            android:alpha="0.5" />
+
+        <TextView
+            android:id="@+id/izvodjac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cijenaLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Cijena ulaznice"
+            android:textSize="16sp"
+            android:alpha="0.5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/cijena_ulaznice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/kontaktLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Kontakt"
+            android:textSize="16sp"
+            android:alpha="0.5" />
+
+        <TextView
+            android:id="@+id/kontakt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PartyNextDoor" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/gradient_bkg_dark</item>
+
+        <item name="android:statusBarColor">@color/deep_purple</item>
+        <item name="android:navigationBarColor">@color/dark_plum</item>
+    </style>
+    <style name="Theme.PartyNextDoor" parent="Base.Theme.PartyNextDoor" />
+</resources>

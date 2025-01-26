@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="4dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/naziv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Unesite naziv"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/organizator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Organizator/i"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/zanr_muzike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/zanr_muzike" />
+
+            <EditText
+                android:id="@+id/izvodjac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Unesite ime izvođača/i"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/opis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Unesite opis"
+                android:inputType="textMultiLine"
+                android:textSize="16sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autocomplete_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Izaberite lokaciju"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/datum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:paddingStart="6dp"
+                android:text="Unesite datum"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/vrijeme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Unesite vrijeme"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/ulaznice_checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Ulaznice?" />
+
+            <EditText
+                android:id="@+id/cijena_ulaznice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Unesite cijenu ulaznice"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/kontakt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Kontakt"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/pozadina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="16sp"
+                android:text="Izaberite pozadinu za vašu žurku" />
+
+            <ImageView
+                android:id="@+id/pozadina_view"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_kreiraj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Sačuvaj" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

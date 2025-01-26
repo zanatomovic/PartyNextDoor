@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "28696069632",
+    "project_id": "partynextdoor-4974b",
+    "storage_bucket": "partynextdoor-4974b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28696069632:android:3e5a50d34920b6e69dbae5",
+        "android_client_info": {
+          "package_name": "com.example.partynextdoor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6MqEo0tGch5rR_Z_WoYao2KV6_2P5h7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
