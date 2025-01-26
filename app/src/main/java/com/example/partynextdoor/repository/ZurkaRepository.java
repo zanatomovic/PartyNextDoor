@@ -71,7 +71,7 @@ public class ZurkaRepository {
                     callback.onSuccess(zurkeList);
                 })
                 .addOnFailureListener(e -> {
-                    Log.e("ZurkaRepository", "Greška: " + e.getMessage());
+                    Log.e("ZurkaRepository", "Greška pri pretrazi: " + e.getMessage());
                     callback.onFailure(e);
                 });
     }
